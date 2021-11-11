@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi primer sitio web</title>
+    <title>Bitácora</title>
     <link rel="stylesheet" href="css/style.css" media="all">
     <link rel="icon" type="image/png" href="icon.png">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;900&amp;display=swap"
@@ -13,47 +13,44 @@
 </head>
 
 <header id="site-header" class="">
-    <nav>
-        <a><img src="imagenes/logo.png" alt="logo"></a>
-        <h1 class="links">
-            <ul>
-                <li>
-                    <a href="index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="sobremi.html">Sobre mí</a>
-                </li>
-                <li>
-                    <a href="proyectos.html">Proyectos</a>
-                </li>
-                <li>
-                    <a href="bitacora.html">Bitácora</a>
-                </li>
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </h1>
+    <nav id="hamnav">
+        <label for="hamburger">&#9776;</label>
+        <input type="checkbox" id="hamburger" />
+        <a><img src="imagenes/logo.png" alt="Francisca Alvarez"></a>
+        <div id="hamitems">
+            <a href="index.html">Inicio</a>
+
+            <a href="sobremi.html">Sobre mí</a>
+
+            <a href="proyectos.html">Proyectos</a>
+
+            <a href="bitacora.html">Bitácora</a>
+
+            <a href="contacto.html">Contacto</a>
+
+        </div>
     </nav>
-
-
 </header>
 
 
 <body>
 
-    <div> Esta es mi bitácora del curso. Aquí hay links e información importante.
+    <div>
+        <p>Esta es mi bitácora del curso de Diseño desde el Código 2021. Aquí hay links e información importante.</p>
+        <br>
+        <a href="https://wiki.ead.pucv.cl/Dise%C3%B1o_desde_el_C%C3%B3digo_2021" class="hero-btn">Página Casiopea del
+            curso</a>
+    </div>
 
-    <a href="" class="hero-btn">Hola</a>
- </div>
- <footer>
-     <address>
-         Viña del Mar
-     </address>
- </footer>
 
 </body>
 
-
+<footer>
+    <address>
+        Viña del Mar
+        <br>
+        2021
+    </address>
+</footer>
 
 </html>

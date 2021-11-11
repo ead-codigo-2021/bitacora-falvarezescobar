@@ -1,30 +1,30 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
 body {
     min-height: 100vh;
     width: 100%;
-    background-image: url("../imagenes/perro.jpeg"); /* esta foto está por mientras, no es la final */
+    background-image: url("../imagenes/fondo.png"); 
     background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     position: relative;
     color: black;
     text-align: center;
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
     padding: 30px;
+    margin-bottom: 11%;
     
 }
-#page-container {
+
+/*#page-container {
     position: relative;
     min-height: 100vh; 
 }
   
 #content-wrap {
     padding-bottom: 2.5rem;}
-  
+  */
+
 nav {
     display: flex;
     padding: 2% 6%;
@@ -32,40 +32,36 @@ nav {
     align-items: center;
 }
 nav img{
-    width: 150px
+    width: 150px;
 }
 
-.links{
-    flex: 1;
-    text-align: right;
-}
-
-.links ul li{
-    list-style: none;
-    display: inline-block;
-    padding: 8px 12px;
-    position: relative;
-}
-
-.links ul li a{
-    color: #fff;
-    text-decoration: none;
-    font-size: 15px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.links ul li::after{
-    content: "";
-    width: 0%;
-    height: 2px;
-    background: #fff;
-    display: block;
-    margin: auto;
-    transition: 0.5s
-}
-
-.links ul li:hover::after{
+#hamnav {
     width: 100%;
+    background: none;
+  }
+#hamitems { display: flex; background: none;  width: auto; }
+
+#hamitems a {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+ 
+}
+
+#hamitems a:hover { background: #401408; transition: 0.5s }
+
+#hamnav label, #hamburger { display: none; }
+
+
+h1 {
+    color: #3d3102;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 10px;
 }
 
 h2 {
@@ -81,30 +77,29 @@ h2 {
     padding: 10px
 }
 
-
 .hero-btn {
     display: inline-block;
     text-decoration: none;
-    color:cornflowerblue;
-    border: 1px solid cornflowerblue;
-    padding: 20px 40px;
+    color:white;
     font-size: 13px;
-    background: transparent;
+    background: #3d3102;
     position: relative;
     cursor: pointer;
     padding: 20px;
-    margin: 0px auto;
 }
 
 .hero-btn:hover{
-    border: 1px solid purple;
-    background: purple;
+    background: #9c151d;
     transition: 1s;
 }
 
+header{
+    width: auto;
+}
 div {
-    width: 320px;
-    padding: 30px;
+    width: min-content;
+    min-width: 300px;
+    padding: 40px;
     background-color: white;
     margin: 0px auto;
   }
@@ -113,7 +108,7 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 2.5rem;  
+    height: 1.5rem;  
 }
 
 address {
@@ -122,21 +117,46 @@ address {
     font-family: 'Montserrat', sans-serif;
 }
 
-@media (max-width: 700px) {
-    h1{
-        font-size: 20px;
-    }
-    .links ul li {
-        display: block;
-    }
-    .links {
-        position: absolute;
-        background: cornflowerblue;
-        height: 100vh;
-        width: 200px;
-        top: 0;
-        right: 0;
-        text-align: left;
-        z-index: 2;
-    }
+@media screen and (max-width: 768px){
+
+  #hamitems a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+  }
+ 
+  #hamnav label { 
+    display: inline-block; 
+    color: white;
+    background: #a02620;
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 10px;
+  }
+
+  #hamitems { display: none; }
+  #hamnav input:checked ~ #hamitems { display: block; }
+
+  body {
+   background: url("../imagenes/fondo.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+    background-color: #3d3102;
+    display:block;
+}
+
+ h2 {
+    max-width: 70%;
+    font-size: 20px;
+  }
+
+  nav a{
+    display: flex;
+    margin-left: auto;
+  margin-right: auto;
+  }
 }

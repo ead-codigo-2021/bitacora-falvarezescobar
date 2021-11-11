@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi primer sitio web</title>
+    <title>Sobre mí</title>
     <link rel="stylesheet" href="css/style.css" media="all">
     <link rel="icon" type="image/png" href="icon.png">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;900&amp;display=swap"
@@ -13,45 +13,43 @@
 </head>
 
 <header id="site-header" class="">
-    <nav>
-        <a><img src="imagenes/logo.png" alt="logo"></a>
-        <h1 class="links">
-            <ul>
-                <li>
-                    <a href="index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="sobremi.html">Sobre mí</a>
-                </li>
-                <li>
-                    <a href="proyectos.html">Proyectos</a>
-                </li>
-                <li>
-                    <a href="bitacora.html">Bitácora</a>
-                </li>
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </h1>
-    </nav>
+    <nav id="hamnav">
+        <label for="hamburger">&#9776;</label>
+        <input type="checkbox" id="hamburger" />
+        <a><img src="imagenes/logo.png" alt="Francisca Alvarez"></a>
+        <div id="hamitems">
+            <a href="index.html">Inicio</a>
 
+            <a href="sobremi.html">Sobre mí</a>
+
+            <a href="proyectos.html">Proyectos</a>
+
+            <a href="bitacora.html">Bitácora</a>
+
+            <a href="contacto.html">Contacto</a>
+
+        </div>
+    </nav>
 
 </header>
 
 <body>
 
-           <div> Me llamo Francisca y estudio Diseño. Esta es mi página. 
-           <a href="" class="hero-btn">Hola</a>
-        </div>
-        <footer>
-            <address>
-                Viña del Mar
-            </address>
-        </footer>
+    <div>
+        <p>Me llamo Francisca y estudio Diseño en la PUCV. Este es mi primer sitio web usando HTML y CSS. </p>
+
+
+    </div>
+
 
 </body>
-
+<footer>
+    <address>
+        Viña del Mar
+        <br>
+        2021
+    </address>
+</footer>
 
 
 </html>
